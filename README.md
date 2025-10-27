@@ -99,6 +99,16 @@ projeto\_finalizado/ ├── ChallengeFiap/
 &nbsp;  firebase deploy --only functions
 
 
+## ⚠️ Arquivo `google-services.json`
+
+Por motivos de segurança, o arquivo `google-services.json` **não está incluído neste repositório**. Ele contém credenciais sensíveis do Firebase e foi removido do controle de versão para evitar exposição pública.
+
+### 🔧 Para executar o app corretamente:
+
+- Insira o arquivo `google-services.json` na pasta `ChallengeFiap/app/` do projeto Android Studio
+- Esse arquivo deve ser obtido diretamente com o autor do projeto ou via compartilhamento privado (Google Drive, e-mail, etc.)
+
+
 
 \## Autores
 
