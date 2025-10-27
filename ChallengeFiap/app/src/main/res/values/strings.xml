@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">chatWTC</string>
+    <string name="name">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="add_photo">Foto</string>
+    <string name="contacts">Contatos</string>
+    <string name="logout">Sair</string>
+    <string name="messages">ChatWTC</string>
+    <string name="hello">Mensagem</string>
+    <string name="send">Enviar</string>
+    <string name="campaign_title">Título da campanha</string>
+    <string name="campaign_body">Mensagem da campanha</string>
+    <string name="campaign_url">URL da campanha</string>
+    <string name="campaign_button">Texto do botão</string>
+    <string name="campaign_button_url">URL do botão</string>
+    <string name="campaign_send">Enviar campanha</string>
+    <string name="campaign_success">Campanha enviada com sucesso!</string>
+    <string name="campaign_error">Erro ao enviar campanha</string>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Criar novo grupo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="12dp" />
+
+        <!-- Campo nome do grupo -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do grupo">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNomeGrupo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Imagem do grupo -->
+        <ImageView
+            android:id="@+id/imageGrupo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/borda_imagem"
+            android:src="@drawable/ic_placeholder" />
+
+        <!-- Botão para escolher imagem -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEscolherImagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escolher imagem"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <!-- Título da lista -->
+        <TextView
+            android:id="@+id/textSelecionarClientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecionar clientes:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Lista de clientes -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerClientes"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scrollbars="vertical" />
+
+        <!-- Botão salvar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSalvarGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar grupo"
+            android:layout_marginTop="24dp"
+            style="@style/Widget.MaterialComponents.Button" />
+
+    </LinearLayout>
+</ScrollView>
